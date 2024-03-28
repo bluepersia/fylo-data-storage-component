@@ -35,6 +35,7 @@ body {
     flex-direction: column;
     gap: 1.14em;
     color: var(--color-3);
+    max-width: 500px;
 }
 
 .fylo_box-1, .fylo_box-2 
@@ -44,7 +45,7 @@ border-radius: 12px;
 }
 
 .fylo_box-1 {
-    padding: 2.85em;
+    padding: 2.85em 7.7em 2.85em 2.85em;
     border-top-right-radius: 50%;
 }
 
@@ -165,3 +166,52 @@ border-radius: 12px;
  }
 
 
+
+
+
+ @media (min-width:1000px)
+ {
+    body {
+        background-color: var(--color-1);
+        background-image: url(./images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: left bottom;
+    }
+
+    .fylo {
+        flex-direction: row;
+        align-items: end;
+        max-width: 920px;
+
+    }
+
+    .fylo_box-1 {
+        padding-right: 9.5em;
+    }
+
+    .fylo_box-2 {
+        width: 100%;
+        padding: 2.85em;
+    }
+
+    .fylo_popup {
+        left:auto;
+        right: 2.85em;
+        bottom: auto;
+        top:0px;
+        transform: translate(0%, -50%);
+    }
+    .fylo_popup_triangle {
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0 2em 2em 0;
+        border-color: transparent #FFFFFF transparent transparent;
+        transform: rotate(0deg);
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        transform: translateY(50%);
+     }
+ }
