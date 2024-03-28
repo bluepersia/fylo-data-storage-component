@@ -1,0 +1,33 @@
+:root 
+{
+    --color-1: hsl(229, 57%, 11%);
+    --color-2: hsl(228, 56%, 26%);
+    --color-3: hsl(243, 100%, 92%);
+
+    -gradient-1: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+html {
+    font-size: 14px;
+}
+
+.fylo, .fylo * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fylo {
+    font-family: "Raleway", sans-serif;
+    
+}
+
+
+.fylo_heading-1 
+{
+    font-size: 2.85rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+
