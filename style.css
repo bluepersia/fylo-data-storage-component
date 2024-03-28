@@ -4,11 +4,23 @@
     --color-2: hsl(228, 56%, 26%);
     --color-3: hsl(243, 100%, 92%);
 
-    -gradient-1: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    --gradient-1: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 }
 
 html {
     font-size: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-1);
+    background-image: url(./images/bg-mobile.png);
+    background-size: cover;
+    padding: 0 6.4%;
 }
 
 .fylo, .fylo * {
@@ -18,8 +30,112 @@ html {
 
 .fylo {
     font-family: "Raleway", sans-serif;
-    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.14em;
+    color: var(--color-3);
 }
+
+.fylo_box-1, .fylo_box-2 
+{
+background-color: var(--color-2);
+border-radius: 12px;
+}
+
+.fylo_box-1 {
+    padding: 2.85em;
+    border-top-right-radius: 50%;
+}
+
+.fylo_logo{
+    width: 51%;
+    margin-bottom: 2.35em;
+}
+
+.fylo_btns {
+    display: flex;
+    align-items: center;
+    gap: 1.14em;
+}
+
+.fylo_btn {
+    display: block;
+    width: 3.42em;
+    height: 3.42em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-1);
+    border-radius: .7em;
+}
+
+.fylo_box-2 {
+    padding: 2.28em 2.28em 3.7em;
+    position: relative;
+}
+
+.fylo_body {
+    margin-bottom: 1.14em;
+}
+
+
+.fylo_bar 
+{
+    width: 100%;
+    height: 1.42em;
+    border-radius: 32px;
+    background-color: var(--color-1);
+    padding: .21em;
+    margin-bottom: .71em;
+}
+
+.fylo_bar_progress 
+{
+    background-image: var(--gradient-1);
+    border-radius: 32px;
+    height: 100%;
+    width: 81.5%;
+    position: relative;
+}
+.fylo_bar_ball {
+    position: absolute;
+    width: .71em;
+    height: .71em;
+    background-color: white;
+    border-radius: 50%;
+    right:0px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.fylo_range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.fylo_popup {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 50%);
+    width: max-content;
+}
+
+.fylo_popup_box
+ {
+    display: flex;
+    align-items: center;
+    gap:.64em;
+    background-color: white;
+    padding: 1.14em 1.71em;
+    border-radius: 12px;
+ }
+
+ 
 
 
 .fylo_heading-1 
@@ -27,6 +143,7 @@ html {
     font-size: 2.85rem;
     line-height: 1;
     font-weight: bold;
+    color:var(--color-1);
 }
 
 
@@ -43,6 +160,8 @@ html {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.083em;
+    opacity: 50%;
+    color:var(--color-1);
  }
 
 
