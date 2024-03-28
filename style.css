@@ -30,4 +30,19 @@ html {
 }
 
 
+.fylo_range_text
+ {
+    font-size: .85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+
+ .fylo_gb-left 
+ {
+    font-size: .85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.083em;
+ }
+
 
